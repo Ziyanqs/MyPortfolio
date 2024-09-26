@@ -1,0 +1,220 @@
+:root {
+--primary-color: #8d8c83;
+--primary-text-color: #228d27;
+--secondary-text-color: #000000;
+}
+
+
+/* Applying common styles to all elements */
+* {
+margin: 0; /* Remove margin for all elements */
+font-size: 20px; /* Set font size for all elements */
+color: var(--secondary-text-color); /* Use secondary text color variable for text color */
+}
+
+/* Styleing the body element */
+body {
+margin: 0; /* Remove margin for the body */
+padding: 0; /* Remove padding for the body */
+box-sizing: border-box; /* Include padding and border in the box model */
+background: var(--primary-color); /* Use primary color variable for the background */
+}
+
+
+/* Styling unordered lists */
+ul {
+list-style: none; /* Remove list bullets */
+font-family:georgia; /* Set font family the ul list */
+}
+
+
+/* Styling for a card element */
+.card {
+box-shadow: 3px 3px 10px #000000, -3px -3px 10px #000000; /* Applying box shadow for card element */
+padding: 30px 14.4px; /* Set padding for the card */
+border-radius: 5px; /* Apply rounded corners to the card */
+}
+
+
+/* Styling the button element */
+.btn {
+box-shadow: 0px 0px 10px #000000, 0px 0px 10px #000000; /* Apply box shadow for buttons */
+padding: 12px 14px; /* Set padding for buttons */
+border-radius: 5px; /* Apply rounded corners to buttons */
+}
+
+
+/* Styling for a default button */
+.default-button {
+background: transparent; /* Set background of default buttons as transparent */
+border: none; /* Remove button border */
+color: var(--primary-text-color); /* Use primary text color variable for button text color */
+height: 0; /* Set height of default buttons to 0 */
+font-family:georgia; /* Set font family for default buttons */
+}
+
+
+/* Styling for an inverted button */
+.btn-inv {
+box-shadow: inset 2px 2px 6px #625858, inset -2px -2px 6px #7d6b6b; /* Apply inset box shadow for inverted buttons */
+padding: 12px 14.4px; /* Set padding for inverted buttons */
+border-radius: 5px; /* Apply rounded corners to inverted buttons */
+display: block; /* Set the display property to block */
+}
+
+
+/* Style for main headings */
+.main-heading {
+font-size: 40px; /* Set font size for main headings */
+line-height: 48px; /* Set line height for main headings */
+color: var(--primary-text-color); /* Use primary text color variable for text color */
+font-family:georgia; /* Set font family for main headings */
+}
+
+
+/* Style for large headings */
+.l-heading {
+font-size: 44.8px; /* Set font size for large headings */
+line-height: 44.8px; /* Set line height for large headings */
+color: var(--primary-text-color); /* Use primary text color variable for text color */
+margin: 32px 0; /* Set top and bottom margin for large headings */
+font-family: georgia; /* Set font family for large headings */
+}
+
+
+/* Styling for small headings */
+.s-heading {
+font-size: 32px; /* Set font size for small headings */
+line-height: 35.2px; /* Set line height for small headings */
+color: var(--primary-text-color); /* Use primary text color variable for text color */
+margin: 20px 0px 20px 0px; /* Set top and bottom margin for small headings */
+font-family: georgia; /* Set font family for small headings */
+}
+
+
+/* Styling the main header section */
+#main-header {
+padding: 16px 0; /* Set padding for the main header */
+}
+
+
+#main-header .container {
+display: flex; /* Use flex display for the header container */
+margin: auto; /* Center align the header container */
+}
+
+
+#main-header #logo .logo {
+width: 200px; /* Set width for the logo image */
+}
+
+
+#main-header #nav-bar ul {
+display: flex; /* Use flex display for the navigation bar ul */
+list-style: none; /* Remove list bullets for navigation items */
+}
+
+
+#main-header #nav-bar ul li {
+margin: 80px 15px; /* Set margin and padding for navigation items */
+padding-bottom: 4px;
+position: relative;
+}
+
+
+/* Styling for the 'about' section */
+#about .container {
+max-width: 1300px; /* Set maximum width for the about section container */
+margin: auto; /* Center align the about section container */
+display: flex; /* Use flex display for the about section */
+justify-content: space-between; /* Space items evenly in the container */
+}
+#about {
+margin: 48px 0; /* Set margin for the about section */
+}
+
+
+#about .showcase-img {
+border-radius: 100%; /* Create a circular border */
+box-shadow: 6px 6px 10px #e0e0e0, -6px -6px 10px #fcfcfc; /* Apply a box shadow for the image */
+}
+
+
+#about #about-content {
+max-width: 60vw; /* Set maximum width for the about content */
+margin: 32px; /* Set margin for the about content */
+}
+
+
+#about #about-content p {
+line-height: 24px; /* Set line height for paragraphs */
+margin-top: 32px; /* Set top margin for paragraphs */
+}
+
+
+/* Stylying for the 'work' section */
+#work #work-proj .card {
+display: flex; /* Use flex display for the project cards */
+margin: 16px 0; /* Set margin for the project cards */
+}
+
+
+#work #work-proj .proj-desc {
+width: 635px; /* Set width for the project description */
+position: relative; /* Define a relative position for the description */
+padding: 16px; /* Set padding for the project description */
+}
+
+
+#work #work-proj .proj-desc .btn {
+position: absolute; /* Set absolute position for buttons in the description */
+bottom: 32px; /* Set the distance from the bottom for buttons */
+}
+
+
+#work #work-proj .proj-img img {
+width: 600px; /* Set width for project images */
+height: 400px; /* Set height for project images */
+border-radius: 10px; /* Apply rounded corners to project images */
+position: relative; top: 2px; right: 10px; /*images positioning*/
+}
+
+
+/* Styling the Contact section */
+#contact .container {
+max-width: 1300px; /* Set maximum width for the contact section container */
+margin: auto; /* Center align the contact section container */
+}
+
+
+#contact .card {
+text-align: center; /* Center-align text in the card */
+margin: 25px; /* Set margin for the contact cards */
+}
+
+
+#contact-info {
+display: inline-block; /* Set the display property to inline-block for contact info */
+padding: 32px; /* Set padding for contact info */
+}
+
+
+/* Styling for the Contact Me Form */
+#getintouch .container {
+max-width: 900px; /* Set maximum width for the contact form container */
+margin: auto; /* Center align the contact form container */
+}
+
+
+#getintouch .card {
+padding: 20px 50px 25px 15px; /* Set padding for the contact form card */
+}
+
+
+#getintouch .card input,
+#getintouch .card textarea {
+border: none; /* Remove borders for input and textarea elements */
+background: transparent; /* Set a transparent background */
+width: 100%; /* Set full width for input and textarea */
+}
+
